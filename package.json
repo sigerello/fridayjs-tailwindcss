@@ -1,0 +1,15 @@
+{
+  "name": "fridayjs-tailwindcss",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "parcel serve ./src/index.html"
+  },
+  "author": "Oleksandr Serhiienko <sigerello@gmail.com>",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^10.5.3",
+    "node-sass": "^4.9.2",
+    "parcel-bundler": "^1.9.7"
+  }
+}
