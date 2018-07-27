@@ -1,3 +1,50 @@
+@tailwind preflight;
+@tailwind utilities;
+
 body {
-  background-color: darkgrey;
+  @apply bg-grey-dark p-32;
+}
+
+.card {
+  @apply max-w-sm p-8 mx-auto bg-white rounded-lg shadow-lg flex flex-col items-center overflow-hidden;
+
+  .image {
+    @apply w-32 h-32 flex-no-shrink;
+
+    img {
+      @apply w-full h-full rounded-full;
+    }
+  }
+
+  .info {
+    @apply mt-4 text-center;
+
+    .name {
+      @apply text-3xl font-normal;
+    }
+
+    .description {
+      @apply mt-1 text-sm font-thin text-grey-dark;
+    }
+
+    .actions {
+      @apply mt-6;
+
+      button {
+        @apply py-2 px-4 font-normal bg-white text-blue-dark border border-blue rounded-full;
+
+        &:hover {
+          @apply text-white bg-blue;
+        }
+      }
+    }
+  }
+
+  @screen md {
+    @apply flex-row;
+
+    .info {
+      @apply mt-0 ml-8 text-left;
+    }
+  }
 }
